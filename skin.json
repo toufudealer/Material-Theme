@@ -1,18 +1,22 @@
 {
     "name": "Material",
     "author": "kuska1",
-    "description": "A theme based on Google's Material 3 Design.",
+    "description": "Theme based on Google's Material 3 Design.",
     "tags": ["Material", "Material You", "Material 3", "Material Design", "Monet", "Dynamic", "Accent", "Light", "Dark", "WIP"],
-    "version": "1.1.5",
-    "header_image": "https://github.com/kuska1/Material-Theme/blob/main/.github/banner.jpg?raw=true",
-    "splash_image": "https://github.com/kuska1/Material-Theme/blob/main/.github/banner.jpg?raw=true",
+    "version": "1.2.10",
+    "header_image": "https://raw.githubusercontent.com/kuska1/Material-Theme/refs/heads/main/.github/banner.jpg",
+    "splash_image": "https://raw.githubusercontent.com/kuska1/Material-Theme/refs/heads/main/.github/banner.jpg",
 
     "github": {
         "owner": "kuska1",
         "repo_name": "Material-Theme"
     },
+    "discord_support": {
+        "inviteCodeExcludingLink": "aGcKmX5KTs"
+    },
 
     "Steam-WebKit": "webkit.css",
+    "RootColors": "css/main/root-colors.css",
     "UseDefaultPatches": true,
 
     "Conditions": {
@@ -30,11 +34,16 @@
                     "TargetCss": {
                         "affects": [".*"], "src": "css/main/appearance/dark.css"
                     }
+                },
+                "OLED": {
+                    "TargetCss": {
+                        "affects": [".*"], "src": "css/main/appearance/oled.css"
+                    }
                 }
             }
         },
         "Color": {
-            "description": "Choose source color. For Custom/Dynamic Color use \"Custom Accent Color\".",
+            "description": "Choose source color.\nFor [b]Matugen[/b] option check [b]\"matugentemplate.css\"[/b].\nFor [b]Custom/Dynamic[/b] option use [b]\"Custom Accent Color\"[/b].",
             "default": "Blue",
             "tab": "Style",
             "values": {
@@ -61,6 +70,11 @@
                 "Yellow": {
                     "TargetCss": {
                         "affects": [".*"], "src": "css/main/colors/yellow.css"
+                    }
+                },
+                "Matugen": {
+                    "TargetJs": {
+                        "affects": [".*"], "src": "js/main/colors/matugen.js"
                     }
                 },
                 "Custom": {
@@ -109,6 +123,11 @@
                         "affects": [".*"], "src": "css/extra/fonts/googlesans.css"
                     }
                 },
+                "Bitcount Single": {
+                    "TargetCss": {
+                        "affects": [".*"], "src": "css/extra/fonts/bitcountsingle.css"
+                    }
+                },
                 "Line Font": {
                     "TargetCss": {
                         "affects": [".*"], "src": "css/extra/fonts/linefont.css"
@@ -141,12 +160,12 @@
                 "Default": {},
                 "Only Icon": {
                     "TargetCss": {
-                        "affects": [".*"], "src": "css/extra/steamIcon/onlyicon.css"
+                        "affects": ["^Steam$"], "src": "css/extra/steamIcon/onlyicon.css"
                     }
                 },
                 "Only Text": {
                     "TargetCss": {
-                        "affects": [".*"], "src": "css/extra/steamIcon/onlytext.css"
+                        "affects": ["^Steam$"], "src": "css/extra/steamIcon/onlytext.css"
                     }
                 }
             }
@@ -176,6 +195,11 @@
                         "affects": [".*"], "src": "css/extra/steamIcon/google.css"
                     }
                 },
+                "Gemini": {
+                    "TargetCss": {
+                        "affects": [".*"], "src": "css/extra/steamIcon/gemini.css"
+                    }
+                },
                 "Appearance": {
                     "TargetCss": {
                         "affects": [".*"], "src": "css/extra/steamIcon/appearance.css"
@@ -189,18 +213,18 @@
             }
         },
         "Toolbar Title Based on Icon": {
-            "description": "Choose \"Steam\" title to icon name.",
+            "description": "Change \"Steam\" title to icon name.",
             "default": "yes",
             "tab": "Toolbar",
             "values": {
                 "no": {
                     "TargetCss": {
-                        "affects": [".*"], "src": "css/extra/steamIcon/defaultitle.css"
+                        "affects": ["^Steam$"], "src": "css/extra/steamIcon/defaultitle.css"
                     }
                 },
                 "yes": {
                     "TargetCss": {
-                        "affects": [".*"], "src": "css/extra/steamIcon/changetitle.css"
+                        "affects": ["^Steam$"], "src": "css/extra/steamIcon/changetitle.css"
                     }
                 }
             }
@@ -213,12 +237,12 @@
                 "Default": {},
                 "Hide Avatar": {
                     "TargetCss": {
-                        "affects": [".*"], "src": "css/extra/account/avatarHide.css"
+                        "affects": ["^Steam$"], "src": "css/extra/account/avatarHide.css"
                     }
                 },
                 "Hide Name": {
                     "TargetCss": {
-                        "affects": [".*"], "src": "css/extra/account/nameHide.css"
+                        "affects": ["^Steam$"], "src": "css/extra/account/nameHide.css"
                     }
                 }
             }
@@ -258,6 +282,19 @@
                 "yes": {
                     "TargetCss": {
                         "affects": ["^Steam$"], "src": "css/extra/toolbar/hideBigPicture.css"
+                    }
+                }
+            }
+        },
+        "Hide Window Control Buttons": {
+            "description": "Hide window control buttons on toolbar.",
+            "default": "no",
+            "tab": "Toolbar",
+            "values": {
+                "no": {},
+                "yes": {
+                    "TargetCss": {
+                        "affects": ["^Steam$"], "src": "css/extra/toolbar/hideWindowControl.css"
                     }
                 }
             }
@@ -363,13 +400,13 @@
                 "no": {},
                 "yes": {
                     "TargetCss": {
-                        "affects": [".*"], "src": "css/extra/store/stickyHeader.css"
+                        "affects": ["https://.*\\.steampowered\\.com(/.*)?"], "src": "css/extra/store/stickyHeader.css"
                     }
                 }
             }
         },
         "What's New": {
-            "description": "Show/Compact/Hide What's New section.",
+            "description": "Show/Compact/Hide \"What's New\" section.",
             "default": "Compact",
             "tab": "Library",
             "values": {
@@ -386,6 +423,19 @@
                 }
             }
         },
+        "Hide Add Shelf": {
+            "description": "Show/Hide \"Add Shelf\" button.",
+            "default": "yes",
+            "tab": "Library",
+            "values": {
+                "no": {},
+                "yes": {
+                    "TargetCss": {
+                        "affects": ["^Steam$"], "src": "css/extra/library/hideAddShelf.css"
+                    }
+                }
+            }
+        },
         "Rare Achievements based on Source Color": {
             "description": "Rare Achievements outline color & effects based on Color Scheme.",
             "default": "yes",
@@ -394,7 +444,7 @@
                 "no": {},
                 "yes": {
                     "TargetCss": {
-                        "affects": [".*"], "src": "css/extra/achievementsIcons/rareSourceColor.css"
+                        "affects": ["^Steam$"], "src": "css/extra/achievementsIcons/rareSourceColor.css"
                     }
                 }
             }
@@ -508,6 +558,37 @@
                 }
             }
         },
+        "Disable Max Hero Image Size": {
+            "description": "Removes max hero image size on game page for correct aspect ratio.",
+            "default": "no",
+            "tab": "Library",
+            "values": {
+                "no": {},
+                "yes": {
+                    "TargetCss": {
+                        "affects": ["^Steam$"], "src": "css/extra/library/disableMaxHeroSize.css"
+                    }
+                }
+            }
+        },
+        "VAC-Ban Visibility": {
+            "description": "Show/Hide the VAC-Ban container from profile pages.",
+            "default": "Show",
+            "tab": "Community",
+            "values": {
+                "Show": {},
+                "Hide for me": {
+                    "TargetCss": {
+                        "affects": ["https://steamcommunity\\.com(/.*)?"], "src": "css/extra/community/vac_hide_me.css"
+                    }
+                },
+                "Hide for all": {
+                    "TargetCss": {
+                        "affects": ["https://steamcommunity\\.com(/.*)?"], "src": "css/extra/community/vac_hide_all.css"
+                    }
+                }
+            }
+        },
         "Account Balance near Account Name": {
             "description": "Show/Blur/Hide account balance near account name.",
             "default": "Blur",
@@ -531,8 +612,8 @@
                 }
             }
         },
-        " - Show balance after hover? ": {
-            "description": "Doesn't work with Full Hide.",
+        " - Show Balance near name after hover?": {
+            "description": "[i]Doesn't work with Full Hide.[/i]",
             "default": "yes",
             "tab": "Privacy",
             "values": {
@@ -567,8 +648,8 @@
                 }
             }
         },
-        " - Show Name after Hover?": {
-            "description": "Doesn't work with Full Hide.",
+        " - Show Name in menu after Hover?": {
+            "description": "[i]Doesn't work with Full Hide.[/i]",
             "default": "yes",
             "tab": "Privacy",
             "values": {
@@ -603,14 +684,50 @@
                 }
             }
         },
-        " - Show Balance after Hover?": {
-            "description": "Doesn't work with Full Hide.",
+        " - Show Balance in menu after Hover?": {
+            "description": "[i]Doesn't work with Full Hide.[/i]",
             "default": "yes",
             "tab": "Privacy",
             "values": {
                 "yes": {				
                     "TargetCss": {
                         "affects": ["Menu$", "SuperNav$"], "src": "css/extra/privacy/balanceAfterHover.css"
+                    }
+                },
+                "no": {}
+            }
+        },
+        "Account Name in Account Change": {
+            "description": "Show/Blur/Hide account name in account change page.",
+            "default": "Blur",
+            "tab": "Privacy",
+            "values": {
+                "Show": {},
+                "Blur": {
+                    "TargetCss": {
+                        "affects": [".Rp8QOGJ2DypeDniMnRBhr"], "src": "css/extra/privacy/accountChangeBlur.css"
+                    }
+                },
+                "Hide": {
+                    "TargetCss": {
+                        "affects": [".Rp8QOGJ2DypeDniMnRBhr"], "src": "css/extra/privacy/accountChangeHide.css"
+                    }
+                },
+                "Full Hide": {
+                    "TargetCss": {
+                        "affects": [".Rp8QOGJ2DypeDniMnRBhr"], "src": "css/extra/privacy/accountChangeFullHide.css"
+                    }
+                }
+            }
+        },
+        " - Show Name in account change after Hover?": {
+            "description": "[i]Doesn't work with Full Hide.[/i]",
+            "default": "yes",
+            "tab": "Privacy",
+            "values": {
+                "yes": {				
+                    "TargetCss": {
+                        "affects": [".Rp8QOGJ2DypeDniMnRBhr"], "src": "css/extra/privacy/accountChangeAfterHover.css"
                     }
                 },
                 "no": {}
@@ -625,6 +742,19 @@
                 "Enabled": {
                     "TargetCss": {
                         "affects": [".*"], "src": "css/extra/animations/enable.css"
+                    }
+                }
+            }
+        },
+        "Ripple Effect": { 
+            "description": "Enable ripple effects on buttons.",
+            "default": "no",
+            "tab": "Performance",
+            "values": {
+                "no": {},
+                "yes": {
+                    "TargetCss": {
+                        "affects": [".*"], "src": "css/extra/animations/ripple_effect.css"
                     }
                 }
             }
@@ -647,7 +777,7 @@
         },
         "Loading Style": { 
             "description": "Choose loading image.",
-            "default": "Material Design",
+            "default": "Color Scheme",
             "tab": "Extra",
             "values": {
                 "Default": {},
@@ -659,11 +789,6 @@
                 "Color Scheme": {
                     "TargetCss": {
                         "affects": [".*"], "src": "css/extra/loading/colorscheme.css"
-                    }
-                },
-                "Shapes": {
-                    "TargetCss": {
-                        "affects": [".*"], "src": "css/extra/loading/shapes.css"
                     }
                 }
             }
@@ -695,7 +820,7 @@
             }
         },
         "Use Experimental Features": { 
-            "description": "Enable experimental features. May cause issues. Feel free to report them on GitHub. Currently affects community/powered steam pages.",
+            "description": "Enable experimental features. May cause issues. Currently affects community/powered steam pages.\n[url=https://github.com/kuska1/Material-Theme/issues/new?template=bug_report.md]Feel free to report them via GitHub or Discord Server.[/url]",
             "default": "no",
             "tab": "Extra",
             "values": {

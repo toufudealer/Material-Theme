@@ -2,4 +2,5 @@
 @import url("css/main/main.css");
 
 /* Community */
-/* Experimental */
+@import url("css/main/community/pointstore.css");
+@import url("css/main/community/hover.css");

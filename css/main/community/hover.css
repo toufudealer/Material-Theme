@@ -1,0 +1,7 @@
+.miniprofile_container {
+    border-radius: var(--corner-radius-small);
+    box-shadow: var(--elevated-shadow);
+}
+.miniprofile_hover > div:not(.miniprofile_hover_inner) {
+    display: none;
+}

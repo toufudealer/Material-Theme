@@ -1,7 +1,7 @@
 <p align="center">
     <a href="https://github.com/kuska1/Material-Theme/">
         <picture>
-          <img src="https://github.com/kuska1/Material-Theme/blob/main/.github/logo.svg?raw=true" alt="Material Logo" width="200">
+          <img src="https://raw.githubusercontent.com/kuska1/Material-Theme/refs/heads/main/.github/logo.svg" alt="Material Logo" width="200">
         </picture>
     </a>
 </p>
@@ -9,23 +9,26 @@
 <div align="center">
 
 # Material
-### Theme for Steam (Millenium) based on Google's Material 3 Design with some Features.
+### Theme for Steam ([Millenium](https://steambrew.app)) based on Google's Material 3 Design with some Features.
+[Discord](https://discord.gg/aGcKmX5KTs)
 
 ## Screenshots
-![Library](https://github.com/kuska1/Material-Theme/blob/main/.github/library.jpg?raw=true)
-![Dynamic](https://github.com/kuska1/Material-Theme/blob/main/.github/dynamic.gif?raw=true)
+![Library](https://raw.githubusercontent.com/kuska1/Material-Theme/refs/heads/main/.github/library.jpg)
+![Dynamic](https://raw.githubusercontent.com/kuska1/Material-Theme/refs/heads/main/.github/dynamic.gif)
 
 </div>
 
 ## Features:
 ### UI
-* Library Restyle [WIP]
+* Library, overlay, notifications, big picture mode restyles [WIP]
+* Download manager restyle
 ### Style
-* Appearance (Light/Dark)
-* Source Color (Red/Blue/Cyan/Green/Yellow/Custom/Dynamic [Beta])
-* Material Icons
+* Appearance (Light/Dark/OLED)
+* Source color (Basic/Custom/Dynamic [Beta])
+* Matugen support
+* Material icons
 * Fonts (Default/Roboto/Open Sans/Google Sans)
-* Alternatie online indicator
+* Alternative online indicator
 ### Toolbar
 * Title collapse
 * Icon change
@@ -38,6 +41,8 @@
 * Groups picture shape
 * Game icons shape
 * Achievements icons shape
+### Store
+* Always visible header
 ### Library
 * What's New style
 * Hover animations
@@ -47,11 +52,11 @@
 ### Extra
 * More animations
 * Loading style
+* Hide scrollbar
 
 ## TODO:
 ### UI
-* Store, Community, Download Manager restyles
-* Overlay, notification, etc restyle
+* Store, Community restyles, etc...
 
 ## Credits:
 ### Developer
@@ -62,6 +67,4 @@
 * [SpaceTheme](https://github.com/SpaceTheme/Steam)
 
 ## Contact & Support
-[![kuska1](https://img.shields.io/badge/kuska1-blue?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://kuska1.github.io)
-
-https://kuska1.github.io
+[Personal Website](https://kuska1.github.io/) or [Discord Server](https://discord.gg/aGcKmX5KTs)

@@ -6,16 +6,22 @@
 }
 /* Basic Button */
 .lat0M-V5X4uYd6Mpm1DJ1 ._16fbihk6Bi9CXuksG7_tLt button,
-button.DialogButton, .O_nD7TklmaIZ80TPx3rjt button.DialogButton,
-._2ohOQgahhMYnIEfAQmv9B8 {
+button.DialogButton, .O_nD7TklmaIZ80TPx3rjt button.DialogButton, button.cXzBZxhPBl7fZs9LODEnc.DialogButton,
+.LclHwcOfHFpwObYMD1HLa ._3H2GezG50hog8gSDj-qbx1 ._3EWVuoln1WAvpEaPNfpift, .LclHwcOfHFpwObYMD1HLa ._3H2GezG50hog8gSDj-qbx1 ._1d8CbcBnA6t3lsxYdnMv1h,
+._2ohOQgahhMYnIEfAQmv9B8,
+/* In BPM */
+.GamepadMode button.cXzBZxhPBl7fZs9LODEnc.DialogButton,
+.GamepadMode button.cXzBZxhPBl7fZs9LODEnc.DialogButton, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover {
     border-radius: var(--corner-radius-full);
 }
 button.DialogButton::before {
     box-shadow: unset;
 }
-.DesktopUI ._1mt2mPMVEDfpOhhWePy9hc .IfVUbt19eXIqaAuGh2i63 {
-    border-radius: var(--corner-radius-full);
+.DesktopUI ._1mt2mPMVEDfpOhhWePy9hc .IfVUbt19eXIqaAuGh2i63,
+.inviteButton.inviteButtonJoinVoice,
+.ChatMessageInvite .inviteButton {
     border: unset;
+    border-radius: var(--corner-radius-full);
     outline: unset;
     box-shadow: unset;
 }
@@ -30,7 +36,10 @@ button.DialogButton:enabled:active, button.DialogButton:enabled:active:hover, bu
 }
 
 /* Big Card Button */
-button.TEWmsM70ZLEOxLAjDMpcv.DialogButton {
+button.TEWmsM70ZLEOxLAjDMpcv.DialogButton,
+/* In BPM */
+.GamepadMode button.TEWmsM70ZLEOxLAjDMpcv.DialogButton,
+.GamepadMode button.TEWmsM70ZLEOxLAjDMpcv.DialogButton, button.TEWmsM70ZLEOxLAjDMpcv.DialogButton:enabled, button.TEWmsM70ZLEOxLAjDMpcv.DialogButton:active, button.TEWmsM70ZLEOxLAjDMpcv.DialogButton:enabled:active:hover {
     border-radius: var(--corner-radius-medium);
 }
 button.TEWmsM70ZLEOxLAjDMpcv.DialogButton::after {
@@ -42,7 +51,15 @@ button.TEWmsM70ZLEOxLAjDMpcv.DialogButton::after {
     box-shadow: unset;
 }
 ._1ZS_xta5HMXzR8JgxDH6n7 ._2PF_m-I5yte3WnQhpcz8RC, /* Library */
-._3few7361SOf4k_YuKCmM62 .DialogDropDown {
+._3few7361SOf4k_YuKCmM62 .DialogDropDown,
+.DesktopUI .MillenniumDesktopSidebar_Content .DialogDropDown._DialogInputContainer,
+.GamepadMode button.cXzBZxhPBl7fZs9LODEnc.v8oJcDOQF6xmlVTw4VhOr.DialogButton,
+.GamepadMode button[role="combobox"],
+.GamepadMode button.cXzBZxhPBl7fZs9LODEnc.v8oJcDOQF6xmlVTw4VhOr.DialogButton:hover,
+.GamepadMode button[role="combobox"]:hover,
+.GamepadMode button.cXzBZxhPBl7fZs9LODEnc.v8oJcDOQF6xmlVTw4VhOr.DialogButton:active,
+.GamepadMode button[role="combobox"]:active,
+._3jj_KvFzq6XW7NasX_7Tvv.DesktopUI .DialogDropDown, .DesktopUI ._3jj_KvFzq6XW7NasX_7Tvv .DialogDropDown /* Modal / EULA */ {
     border-radius: var(--corner-radius-small);
 }
 ._30wJO3MC4x-I1OWpy1TAeE._DialogInputContainer {
@@ -72,8 +89,12 @@ button.TEWmsM70ZLEOxLAjDMpcv.DialogButton::after {
 
 /* Library */
 /* Play / Install / etc button */
-._3ydigb6zZAjJ0JCDgHwSYA {
+._3ydigb6zZAjJ0JCDgHwSYA,
+.BasicUI .QsZdWtHTlIK9KIKbscNTt {
     border-radius: var(--corner-radius-medium);
+}
+.BasicUI ._2AzIX5kl9k6JnxLfR5H4kX::after {
+    border-radius: var(--corner-radius-medium) !important;
 }
 /* Update Button */
 ._1hhB2Wf7iExA15zh_lDQ_y ._3ydigb6zZAjJ0JCDgHwSYA /* Base (L) */ {
@@ -96,10 +117,10 @@ button.TEWmsM70ZLEOxLAjDMpcv.DialogButton::after {
     border-top-left-radius: var(--corner-radius-small);
     border-bottom-left-radius: var(--corner-radius-small);
 }
-body:has(._2yAm5LY_eu-Vg_52l0HFlM, .DesktopUI .PP7LM0Ow1K5qkR8WElLpt) ._2AzIX5kl9k6JnxLfR5H4kX._2q-gZ3XJzlvSGHSF-GvSmi {
+body:has(._2yAm5LY_eu-Vg_52l0HFlM ._1mpeIo_E-qVxqb3DeRrQvl) ._2AzIX5kl9k6JnxLfR5H4kX._2q-gZ3XJzlvSGHSF-GvSmi {
     border-radius: var(--corner-radius-full);
 }
-body:has(._2yAm5LY_eu-Vg_52l0HFlM, .DesktopUI .PP7LM0Ow1K5qkR8WElLpt) ._2AzIX5kl9k6JnxLfR5H4kX._2q-gZ3XJzlvSGHSF-GvSmi svg {
+body:has(._2yAm5LY_eu-Vg_52l0HFlM ._1mpeIo_E-qVxqb3DeRrQvl) ._2AzIX5kl9k6JnxLfR5H4kX._2q-gZ3XJzlvSGHSF-GvSmi svg {
     transform: rotate(360deg) !important;
 }
 
@@ -190,7 +211,7 @@ body:has(._2yAm5LY_eu-Vg_52l0HFlM, .DesktopUI .PP7LM0Ow1K5qkR8WElLpt) ._2AzIX5kl
     border-bottom-left-radius: var(--corner-radius-medium);
 }
 .HijmccPB1BKyhOwhX1EVl._3-_jME_xsuvgT3Dvq4bw_q {
-    border-radius: var(--corner-radius-full) !important;
+    border-radius: var(--corner-radius-large) !important;
 }
 .HijmccPB1BKyhOwhX1EVl._3-_jME_xsuvgT3Dvq4bw_q:first-child:not(:last-child):active {
     border-top-right-radius: var(--corner-radius-extra-small) !important;
@@ -207,4 +228,52 @@ body:has(._2yAm5LY_eu-Vg_52l0HFlM, .DesktopUI .PP7LM0Ow1K5qkR8WElLpt) ._2AzIX5kl
     display: none;
 }
 
-/* Community */
+/* Overlay */
+/* Default Toolbar */
+/* Not Checked */
+._3OzkVrQFFPv0aV41N4MrHV._1kICdMcVupzY5a9PzI2JIU .fbu3l7kPiBeb3EKCjIb8n ._3ZLaTxSHxeGcoKlIy_-Z0L._1BXjK5v8XI_SEhGola5ftn:active,
+._3OzkVrQFFPv0aV41N4MrHV._1kICdMcVupzY5a9PzI2JIU .fbu3l7kPiBeb3EKCjIb8n ._3ZLaTxSHxeGcoKlIy_-Z0L {
+    border-radius: var(--corner-radius-full);
+}
+/* Checked */
+._3OzkVrQFFPv0aV41N4MrHV._1kICdMcVupzY5a9PzI2JIU .fbu3l7kPiBeb3EKCjIb8n ._3ZLaTxSHxeGcoKlIy_-Z0L:not(._1BXjK5v8XI_SEhGola5ftn):active,
+._3OzkVrQFFPv0aV41N4MrHV._1kICdMcVupzY5a9PzI2JIU .fbu3l7kPiBeb3EKCjIb8n ._3ZLaTxSHxeGcoKlIy_-Z0L._1BXjK5v8XI_SEhGola5ftn {
+    border-radius: var(--corner-radius-medium);
+}
+
+/* Millenium Theme Settings */
+.tool-tip-source:not(.tool-tip-source ~ .tool-tip-source):not(:has(~ .tool-tip-source)) ._3LM_ZckJp5yJYrL1OI_WqW button.DialogButton {
+    border-radius: var(--corner-radius-medium);
+}
+
+.tool-tip-source:not(.tool-tip-source ~ .tool-tip-source):has(~ .tool-tip-source) ._3LM_ZckJp5yJYrL1OI_WqW button.DialogButton {
+    border-top-left-radius: var(--corner-radius-medium);
+    border-top-right-radius: var(--corner-radius-medium);
+    border-bottom-left-radius: var(--corner-radius-extra-small);
+    border-bottom-right-radius: var(--corner-radius-extra-small);
+}
+.tool-tip-source:has(~ .tool-tip-source):is(.tool-tip-source ~ .tool-tip-source) ._3LM_ZckJp5yJYrL1OI_WqW button.DialogButton {
+    border-radius: var(--corner-radius-extra-small);
+}
+.tool-tip-source:not(:has(~ .tool-tip-source)):is(.tool-tip-source ~ .tool-tip-source) ._3LM_ZckJp5yJYrL1OI_WqW button.DialogButton {
+    border-top-left-radius: var(--corner-radius-extra-small);
+    border-top-right-radius: var(--corner-radius-extra-small);
+    border-bottom-left-radius: var(--corner-radius-medium);
+    border-bottom-right-radius: var(--corner-radius-medium);
+}
+
+.MillenniumDesktopSidebar .MillenniumDesktopSidebar_Content .MillenniumSideBar_LibraryItemButton {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    margin-bottom: 2px !important;
+}
+
+/* Collections */
+._33bWWYKdaxI_uMvK0TPjm4 ._3vDq3loNLE6O8iHtj6rOfX ._25n_zgE_sgrYzl4G-YE8VN {
+    border: unset;
+    border-radius: var(--corner-radius-full);
+}
+._33bWWYKdaxI_uMvK0TPjm4 ._3vDq3loNLE6O8iHtj6rOfX ._25n_zgE_sgrYzl4G-YE8VN:focus {
+    border: unset;
+    border-radius: var(--corner-radius-full);
+}

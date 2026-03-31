@@ -15,9 +15,27 @@
     width: 24px;
     height: 24px;
 }
-/* Big Picture */
-._2Szzh5sKyGgnLUR870zbDE, ._3LKQ3S_yqrebeNLF6aeiog:hover {
+/* Family View */
+._3cykd-VfN_xBxf3Qxriccm ._13vrqU6oOqmmxrsZSW5O39 {
     border-radius: var(--corner-radius-full);
+    width: 52px;
+    height: 24px;
+}
+._13vrqU6oOqmmxrsZSW5O39:hover,
+._13vrqU6oOqmmxrsZSW5O39:hover ._34bQcTHo5QKzuujoEyU1tm {
+    transition: background-color .15s ease-out;
+}
+/* Big Picture */
+/* ._2Szzh5sKyGgnLUR870zbDE, ._3LKQ3S_yqrebeNLF6aeiog:hover {
+    border-radius: var(--corner-radius-full);
+} */
+
+._3LKQ3S_yqrebeNLF6aeiog, ._3LKQ3S_yqrebeNLF6aeiog:hover,
+._3cykd-VfN_xBxf3Qxriccm .tool-tip-source:has(._3LKQ3S_yqrebeNLF6aeiog) {
+    border-radius: var(--corner-radius-full);
+    width: 24px;
+    height: 24px;
+    min-width: 24px !important;
 }
 
 ._3cykd-VfN_xBxf3Qxriccm {
@@ -42,6 +60,12 @@
 }
 .MCa4RMSvWJwwWjcZP2wTT ._1oERP7bVictkby2hP4BBva {
     border-radius: var(--corner-radius-full);
+}
+/* Base */
+._2EstNjFIIZm_WUSKm5Wt7n._3pofGqV0buiKAfMPEs3_82._1UgM1Pm8SbTWX7_2f-crGt {
+    margin-block: 4px;
+    margin-inline: 0px;
+    padding: unset;
 }
 /* Cards */
 ._1pIhbqWsrCVPaGGYc6fT-H {
@@ -70,6 +94,63 @@
     border-top-right-radius: var(--corner-radius-extra-small);
     border-bottom-left-radius: var(--corner-radius-medium);
     border-bottom-right-radius: var(--corner-radius-medium);
+}
+/* Img */
+._1GTWEgiW95vRIhUWfk6omo {
+    filter: unset;
+    position: relative;
+    z-index: 2;
+}
+._1VRx9qVxigUC4qeM0NWNMR .Panel img:last-child {
+    /* display: none; */
+    z-index: 1;
+}
+
+/* Fix */
+.RtSv39ZoBOySnb8XQ5hJf._9YK5IY219Pm_F53DAxyYp {
+    animation: unset;
+}
+
+/* URL Bar */
+._1bGewp3tfzqAF6fVTFFUOz .UkR3sY319PuaUNuUWks2K svg {
+    padding-right: unset;
+    padding-left: unset;
+}
+._1bGewp3tfzqAF6fVTFFUOz .UkR3sY319PuaUNuUWks2K ._3KaB94Jl4r0hFkthDPJy09 {
+    padding: 2px 4px;
+}
+._1bGewp3tfzqAF6fVTFFUOz .UkR3sY319PuaUNuUWks2K ._2m_orETo6AghzAnc0sISCt {
+    gap: 4px;
+}
+/* Plugins Support / Extendium */
+.extensions-bar-container .extensions-bar,
+.extensions-bar-container .extensions-bar:hover {
+    border: unset !important;
+}
+.DesktopUI .eKmEXJCm_lgme24Fp_HWt._2HuzvKQ2QMUJ-JJOeApaF1:not(.aIeh3X5T2M074RLW1qn6_):hover {
+    cursor: pointer !important;
+}
+.extension-manager-popup .extension-card,
+.extension-manager-popup .extension-detail-info {
+    border-radius: var(--corner-radius-medium) !important;
+    box-shadow: unset !important;
+}
+.extension-manager-popup .extension-main .icon img,
+.extension-manager-popup .extension-detail-info .page-header>img {
+    border-radius: var(--corner-radius-small) !important;
+}
+.extensions-bar-container .extension-button img {
+    border-radius: var(--corner-radius-extra-small) !important;
+}
+.extension-manager-popup .extension-detail-info .clickable-row:last-child {
+    border-bottom-left-radius: var(--corner-radius-small) !important;
+    border-bottom-right-radius: var(--corner-radius-small) !important;
+}
+.extension-manager-popup .extension-buttons {
+    height: unset !important;
+}
+.extension-manager-popup .extension-buttons button {
+    border-radius: var(--corner-radius-full) !important;
 }
 
 /* STYLE 1 TEST */

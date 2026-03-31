@@ -6,8 +6,11 @@
     border-radius: var(--corner-radius-extra-small);
 }
 
-.ModalDialogPopup .DialogContent, .DialogContent, .DialogContentTransition:not(.OX7USkJ5dDP_icD00Gal6) {
+.ModalDialogPopup .DialogContent, .DialogContent:not([role="tabpanel"]), .DialogContentTransition:not(.OX7USkJ5dDP_icD00Gal6) {
     border-radius: var(--corner-radius-extra-large);
+}
+.DeckVerifiedModalDialogClient .DialogContent, .DeckVerifiedModalDialog .DialogContent {
+    border: unset;
 }
 
 .DialogContent.CFTLX2wIKOK3hNV-fS7_V {
@@ -28,6 +31,7 @@
 
 /* Remove Dialog Line */
 div.ModalPosition_TopBar {
+    display: none;
     background: unset;
 }
 
@@ -39,11 +43,48 @@ div.ModalPosition_TopBar {
 }
 
 /* Included */
+._3v2Gg_GCpLHpHQDLFQ7cvI ._3f3VJUtyLXUf_JDFE-BaQ6 {
+    margin-top: unset;
+}
 ._3v2Gg_GCpLHpHQDLFQ7cvI.hYVp3sXyS0uYfJnzVoK-m ._3f3VJUtyLXUf_JDFE-BaQ6,
-._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3lj3-GDYOlcoIFB3fFo1ko {
+._3sa1NXudhvcc1U7HrlLdNQ._2ngG3CCc-g0zyXymxnDnM0,
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3lj3-GDYOlcoIFB3fFo1ko,
+.LclHwcOfHFpwObYMD1HLa ._2aHnQT0gTQ5KIsi5omK93w ._134yW7SKfZYwmvwlUElGx-,
+._2SwH92Kuhm2Kw8_VHMFHcy,
+._1dbgUdk0xgEX7E4Db_r5mb, .DesktopUI ._2YXHRFCzmxgvxVGtA3TWVf ._7lXDajp5HNY9Kpnbeykv {
     border: unset;
     border-radius: var(--corner-radius-small);
     box-shadow: unset;
+}
+/* QR Code */
+._2nfA6g3AeXaUBZ2fDMSBPA .UTetJckMNtrxwllPEi_zN ._5S5WqZhvbmRD1cHQT8P-l {
+    border-radius: var(--corner-radius-medium);
+}
+/* Image */
+.Krg05lMwvNmhhVXhqdleu ._3MJEANCb5PkduXTSJ6o3bq ._3mitVrK37Z0VhEoNSmfjT8 img {
+    border-radius: var(--corner-radius-small);
+}
+/* Launch Option Buttons */
+.LclHwcOfHFpwObYMD1HLa ._2aHnQT0gTQ5KIsi5omK93w ._134yW7SKfZYwmvwlUElGx- ._3DEhfTvEKwgLd4smd6QdaU:first-child:last-child {
+    border-radius: var(--corner-radius-medium);
+}
+.LclHwcOfHFpwObYMD1HLa ._2aHnQT0gTQ5KIsi5omK93w ._134yW7SKfZYwmvwlUElGx- ._3DEhfTvEKwgLd4smd6QdaU:first-child:not(:last-child) {
+    border-top-left-radius: var(--corner-radius-medium);
+    border-top-right-radius: var(--corner-radius-medium);
+    border-bottom-left-radius: var(--corner-radius-extra-small);
+    border-bottom-right-radius: var(--corner-radius-extra-small);
+}
+.LclHwcOfHFpwObYMD1HLa ._2aHnQT0gTQ5KIsi5omK93w ._134yW7SKfZYwmvwlUElGx- ._3DEhfTvEKwgLd4smd6QdaU:not(:first-child):not(:last-child) {
+    border-top-left-radius: var(--corner-radius-extra-small);
+    border-top-right-radius: var(--corner-radius-extra-small);
+    border-bottom-left-radius: var(--corner-radius-extra-small);
+    border-bottom-right-radius: var(--corner-radius-extra-small);
+}
+.LclHwcOfHFpwObYMD1HLa ._2aHnQT0gTQ5KIsi5omK93w ._134yW7SKfZYwmvwlUElGx- ._3DEhfTvEKwgLd4smd6QdaU:last-child:not(:first-child)  {
+    border-top-left-radius: var(--corner-radius-extra-small);
+    border-top-right-radius: var(--corner-radius-extra-small);
+    border-bottom-left-radius: var(--corner-radius-medium);
+    border-bottom-right-radius: var(--corner-radius-medium);
 }
 
 /* Margin Fix? */
